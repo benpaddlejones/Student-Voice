@@ -5,7 +5,6 @@
 <title>StudentVoice</title>
 <link href="styles/fontstyles.css" rel="stylesheet" type="text/css">
 <link href="styles/mainstyles.css" rel="stylesheet" type="text/css">
-
 </head>
 
 <body>
@@ -15,7 +14,7 @@
 <script type="text/javascript" src="jqueryui/jquery-ui.js"></script> 
 <!-- Start Jquery Code !--> 
 <script type="text/javascript">
-//Variables Help in Memory
+//Variables (Need to be kept in data)
 $firsttime = 0;
 
 //Start code here
@@ -42,31 +41,6 @@ $(document).ready(function(){
 
 <!-- Welcome page !-->
 <div id="mainpage">
-  <div id="form">
-  <link href="styles/formstyles.css" rel="stylesheet" type="text/css">
-    <label><span>Name <span class="required">*</span></span>
-      <input type="text" name="name" id="name" required class="input-field"/>
-    </label>
-    <label><span>Email <span class="required">*</span></span>
-      <input type="email" name="email" required class="input-field"/>
-    </label>
-    <label><span>Attachment</span>
-      <input type="file" name="file_attach" class="input-field" />
-    </label>
-    <label for="subject"><span>Regarding</span>
-      <select name="subject" class="select-field">
-        <option value="General Question">General Question</option>
-        <option value="Advertise">Advertisement</option>
-        <option value="Partnership">Partnership Oppertunity</option>
-      </select>
-    </label>
-    <label for="field5"><span>Message <span class="required">*</span></span>
-      <textarea name="message" id="message" class="textarea-field" required></textarea>
-    </label>
-    <label> <span>&nbsp;</span>
-      <input type="submit" id="submit_btn" value="Submit" />
-    </label>
-  </div>
 </div>
 
 <!-- 1st Time Welcome !-->
