@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>StudentVoice</title>
+<link href="styles/fontstyles.css" rel="stylesheet" type="text/css">
+<link href="styles/mainstyles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<!-- Link Jquery & JqueryUI !--> 
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script> 
+<script type="text/javascript" src="jqueryui/jquery-ui.js"></script> 
+<!-- Start Jquery Code !--> 
+<script type="text/javascript">
+//Variables Help in Memory
+var firsttime = 1;
+
+//Start code here
+$(document).ready(function(){
+	$("#header").fadeIn(2000);
+	if (firsttime == 0) {
+		$("#first-time-welcome").delay(2000).show("slide", {direction: "up"}, 1500);
+			$("#close-button-first-time").click(function(){
+			$("#first-time-welcome").hide("slide", {direction: "up"}, 1500);
+			var firsttime = 1;
+			$("#mainpage").delay(1500).fadeIn(1000);
+		});
+	} else {
+		var firsttime = 1;
+		$("#mainpage").delay(1000).fadeIn(1000);
+	}
+});
+</script> 
+
+<!-- HEADER !-->
+<div id="header">
+  <p id="student">STUDENT<span id="voice">VOICE</span><span id="header-settings-cog"><img id="main-settings-cog" src="assets/settings-cog.png" width="32" height="32"></span></p>
+</div>
+
+<!-- Welcome page !-->
+<div id="mainpage">
+  <div id="form">
+  <link href="styles/formstyles.css" rel="stylesheet" type="text/css">
+    <label><span>Name <span class="required">*</span></span>
+      <input type="text" name="name" id="name" required class="input-field"/>
+    </label>
+    <label><span>Email <span class="required">*</span></span>
+      <input type="email" name="email" required class="input-field"/>
+    </label>
+    <label><span>Attachment</span>
+      <input type="file" name="file_attach" class="input-field" />
+    </label>
+    <label for="subject"><span>Regarding</span>
+      <select name="subject" class="select-field">
+        <option value="General Question">General Question</option>
+        <option value="Advertise">Advertisement</option>
+        <option value="Partnership">Partnership Oppertunity</option>
+      </select>
+    </label>
+    <label for="field5"><span>Message <span class="required">*</span></span>
+      <textarea name="message" id="message" class="textarea-field" required></textarea>
+    </label>
+    <label> <span>&nbsp;</span>
+      <input type="submit" id="submit_btn" value="Submit" />
+    </label>
+  </div>
+</div>
+
+<!-- 1st Time Welcome !-->
+<div id="first-time-welcome"> &nbsp;
+  <p id="welcome-title">Welcome!</p>
+  <p id="welcome-page-content">Hey, looks like its the first time you have run this app or it has been the first time you have run this app since an update. This is just a friendly reminder that you must be aware of the policies we have in place. Blah, more random bullshit on this page. To close this reminder please tap on "Close".</p>
+  <span id="close-button-first-time">CLOSE</span>
+  <p>&nbsp;</p>
+</div>
+</body>
+</html>
