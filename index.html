@@ -5,6 +5,7 @@
 <title>StudentVoice</title>
 <link href="css/fontstyles.css" rel="stylesheet" type="text/css">
 <link href="css/mainstyles.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -21,6 +22,12 @@
 
 <!-- Main Page !-->
 <div id="mainpage">
+	<div id="main-form">
+    <form action="" method="post" enctype="multipart/form-data" name="main-form">
+    	First Name: <input type="text" required id="firstName" pattern="[A-Z]{3}" />
+        Last Name: <input type="text" required id="lastName" pattern="[A-Z]{3}" />
+    </form>
+	</div>
 </div>
 
 <!-- 1st Time Welcome !-->
