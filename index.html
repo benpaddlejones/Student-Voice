@@ -3,43 +3,23 @@
 <head>
 <meta charset="utf-8">
 <title>StudentVoice</title>
-<link href="styles/fontstyles.css" rel="stylesheet" type="text/css">
-<link href="styles/mainstyles.css" rel="stylesheet" type="text/css">
+<link href="css/fontstyles.css" rel="stylesheet" type="text/css">
+<link href="css/mainstyles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
-<!-- Link Jquery & JqueryUI !--> 
-<script type="text/javascript" src="jquery-1.11.3.min.js"></script> 
-<script type="text/javascript" src="jqueryui/jquery-ui.js"></script> 
-<!-- Start Jquery Code !--> 
-<script type="text/javascript">
-//Variables (Need to be kept in data)
-$firsttime = 0;
-
-//Start code here
-$(document).ready(function(){
-	$("#header").fadeIn(2000);
-	if ($firsttime == 0) {
-		$("#first-time-welcome").delay(2000).show("slide", {direction: "up"}, 1500);
-			$("#close-button-first-time").click(function(){
-			$("#first-time-welcome").hide("slide", {direction: "up"}, 1500);
-			var firsttime = 1;
-			$("#mainpage").delay(1500).fadeIn(1000);
-		});
-	} else {
-		$firsttime = 1;
-		$("#mainpage").delay(1000).fadeIn(1000);
-	}
-});
-</script> 
+<!-- jScript and jQuery/jQueryUI Code !--> 
+<script type="text/javascript" src="lib/jquery1.11.3.min.js"></script> 
+<script type="text/javascript" src="lib/jqueryui/jquery-ui.js"></script> 
+<script type="text/javascript" src="scripts/main.js"></script>
 
 <!-- HEADER !-->
 <div id="header">
-  <p id="student">STUDENT<span id="voice">VOICE</span><span id="header-settings-cog"><img id="main-settings-cog" src="assets/settings-cog.png" width="32" height="32"></span></p>
+  <p id="student">STUDENT<span id="voice">VOICE</span><span id="header-settings-cog"><img id="main-settings-cog" src="images/settingscog.png" width="32" height="32"></span></p>
 </div>
 
-<!-- Welcome page !-->
+<!-- Main Page !-->
 <div id="mainpage">
 </div>
 
