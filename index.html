@@ -5,8 +5,8 @@
 <title>StudentVoice</title>
 <link href="css/fontstyles.css" rel="stylesheet" type="text/css">
 <link href="css/mainstyles.css" rel="stylesheet" type="text/css">
+<link href="css/formstyles.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="import" href="css/paper-ripple.html">
 </head>
 
 <body>
@@ -14,7 +14,8 @@
 <!-- jScript and jQuery/jQueryUI Code !--> 
 <script type="text/javascript" src="lib/jquery1.11.3.min.js"></script> 
 <script type="text/javascript" src="lib/jqueryui/jquery-ui.js"></script> 
-<script type="text/javascript" src="scripts/main.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script> 
+<script type="text/javascript" src="scripts/form.js"></script> 
 
 <!-- HEADER !-->
 <div id="header">
@@ -23,20 +24,38 @@
 
 <!-- Main Page !-->
 <div id="mainpage">
-	<div id="main-form">
-    <form action="" method="post" enctype="multipart/form-data" name="main-form">
-    	First Name: <input type="text" required id="firstName" pattern="[A-Z]{3}" />
-        Last Name: <input type="text" required id="lastName" pattern="[A-Z]{3}" />
-    </form>
-	</div>
+<form>
+  <div class="group">
+    <input type="text"><span class="highlight"></span><span class="bar"></span>
+    <label>Name</label>
+  </div>
+  <div class="group">
+    <input type="text"><span class="highlight"></span><span class="bar"></span>
+    <label>Last Name</label>
+  </div>
+  <div class="group">
+    <input type="text"><span class="highlight"></span><span class="bar"></span>
+    <label>eMail Address</label>
+  </div>
+  <div class="group">
+    <input type="text"><span class="highlight"></span><span class="bar"></span>
+    <label>School</label>
+  </div>
+  <div class="group">
+    <input type="email"><span class="highlight"></span><span class="bar"></span>
+    <label>Email</label>
+  </div>
+  <button type="button" class="button buttonBlue">Submit
+    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+  </button>
+</form>
 </div>
 
 <!-- 1st Time Welcome !-->
 <div id="first-time-welcome"> &nbsp;
   <p id="welcome-title">Welcome!</p>
   <p id="welcome-page-content">Hey, looks like its the first time you have run this app or it has been the first time you have run this app since an update. This is just a friendly reminder that you must be aware of the policies we have in place. Blah, more random bullshit on this page. To close this reminder please tap on "Close".</p>
-  <span id="close-button-first-time">CLOSE
-  </span>
+  <span id="close-button-first-time">CLOSE </span>
   <p>&nbsp;</p>
 </div>
 </body>
