@@ -11,6 +11,7 @@ lib - No owner (include libraries as needed, only raise an issue if deleting a f
 
 scripts - (file specific as below, as you add *.js files include them below and request owner of index.html to add them)
 		main.js - Arian
+
 index.html - Arian
 
 config.xml - Ben
