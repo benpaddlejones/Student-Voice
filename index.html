@@ -6,6 +6,7 @@
 <link href="css/fontstyles.css" rel="stylesheet" type="text/css">
 <link href="css/mainstyles.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="import" href="https://www.polymer-project.org/0.5/components/paper-ripple/paper-ripple.html">
 </head>
 
 <body>
@@ -34,7 +35,11 @@
 <div id="first-time-welcome"> &nbsp;
   <p id="welcome-title">Welcome!</p>
   <p id="welcome-page-content">Hey, looks like its the first time you have run this app or it has been the first time you have run this app since an update. This is just a friendly reminder that you must be aware of the policies we have in place. Blah, more random bullshit on this page. To close this reminder please tap on "Close".</p>
-  <span id="close-button-first-time">CLOSE</span>
+  <div>
+  <span style="overflow:auto;" id="close-button-first-time">CLOSE
+  <paper-ripple fit></paper-ripple>
+  </span>
+  </div>
   <p>&nbsp;</p>
 </div>
 </body>
