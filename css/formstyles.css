@@ -1,38 +1,20 @@
 * { box-sizing:border-box; }
 
-body {
-	font-family: Helvetica;
-	background: #eee;
-  -webkit-font-smoothing: antialiased;
-}
-
-hgroup {
-	text-align: center;
-	margin-top: 2em;
-}
-
-h1, h3 { font-weight: 300; }
-
-h1 { color: #636363; }
-
-h3 { color: #4a89dc; }
-
 form {
-	width: 100%;
-	margin: 4em auto;
-	padding: 3em 2em 2em 2em;
+	width: 90%;
 	background: #fafafa;
-	border: 1px solid #ebebeb;
-	box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin: 4em auto;
 }
 
-.group { 
-	position: relative; 
-	margin-bottom: 45px; 
+.group {
+	position: relative;
+	margin-bottom: 10%;
 }
 
 input {
-	font-size: 18px;
+	font-size: 100%;
 	padding: 10px 10px 10px 5px;
 	-webkit-appearance: none;
 	display: block;
@@ -42,6 +24,7 @@ input {
 	border: none;
 	border-radius: 0;
 	border-bottom: 1px solid #757575;
+	font-family: Roboto-Regular;
 }
 
 input:focus { outline: none; }
@@ -50,12 +33,11 @@ input:focus { outline: none; }
 /* Label */
 
 label {
-	color: #999; 
-	font-size: 18px;
+	color: #999;
+	font-size: 100%;
 	font-weight: normal;
 	position: absolute;
 	pointer-events: none;
-	left: 5px;
 	top: 10px;
 	transition: all 0.2s ease;
 }
@@ -154,11 +136,19 @@ input:focus ~ .highlight {
 /* Button modifiers */
 
 .buttonBlue {
-  background: #4a89dc;
-  text-shadow: 1px 1px 0 rgba(39, 110, 204, .5);
+	text-shadow: 1px 1px 0 rgba(39, 110, 204, .5);
+	background-color: #007FCC;
 }
 
-.buttonBlue:hover { background: #357bd8; }
+.buttonBlue:hover {
+	color: #007FCC;
+	background-color: #EEEEEE;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
 
 
 /* Ripples container */
