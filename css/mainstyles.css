@@ -6,15 +6,12 @@ body {
 	bottom: 0px;
 	margin: 0;
 	padding: 0;
-	background-color: #009fff;
 	height: auto;
+	background-color: #FAFAFA;
 }
 
 #header {
 	width: 100%;
-	-moz-box-shadow: 0px 3px 5px -2px #000;
-	-webkit-box-shadow: 0px 3px 5px -2px #000;
-	box-shadow: 0px 3px 5px -2px #000;
 	background-color: #007fcc;
 	text-align: center;
 	color: #FFF;
@@ -23,8 +20,8 @@ body {
 	z-index: 10;
 	display: none;
 	border: none;
-	position: relative;
-	height: 5%;
+	position: fixed;
+	height: auto;
 	
 }
 #header #student {
@@ -50,23 +47,18 @@ body {
 	float: right;
 	position: relative;
 	z-index: 11;
-	margin-right: 5%;
+	margin-top: auto;
+	margin-bottom:  auto;
 }
 
 #first-time-welcome {
-	height: auto;
-	width: 80%;
+	height: 100%;
+	width: 100%;
 	background-color: #FFF;
-	margin-left: 10%;
-	margin-right: 10%;
-	font-family: Roboto;
+	font-family: Roboto-Regular;
 	font-size: 100%;
 	color: #000;
-	-moz-box-shadow: 0px 2px 5px 0.5px #000;
-	-webkit-box-shadow: 0px 2px 5px 0.5px #000;
-	box-shadow: 0px 2px 5px 0.5px #000;
 	z-index: 9;
-	text-align: middle;
 	display: none;
 	position: absolute;
 }
@@ -76,6 +68,7 @@ body {
 	color: #000;
 	text-align: left;
 	padding-left: 2em;
+	margin-top: 10%;
 }
 
 #first-time-welcome #welcome-page-content {
@@ -85,23 +78,10 @@ body {
 	font-family: Roboto-Regular;
 
 }
-#first-time-welcome #close-button-first-time {
-	background-color: #008ade;
-	height: auto;
-	width: auto;
-	padding: 0.5em;
-	margin-left: 2em;
-	margin-bottom: 2em;
-	font-family: Roboto-BoldCondensedItalic;
-	color: #FFF;
-	cursor: pointer;
-}
 #mainpage {
 	padding: 0px;
 	height: auto;
-	width: 80%;
-	margin-right: 10%;
-	margin-left: 10%;
+	width: 100%;
 	display: none;
 	position: absolute;
 	z-index: 8;
@@ -109,4 +89,10 @@ body {
 #mainpage #main-form form {
 	text-align: left;
 	margin-top: 5%;
+}
+#first-time-close {
+	width: auto;
+	margin-left: 2em;
+	font-size: 100%;
+	position: absolute;
 }

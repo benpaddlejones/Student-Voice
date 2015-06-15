@@ -6,7 +6,7 @@ $(document).ready(function(){
 	$("#header").fadeIn(2000);
 	if ($firsttime == 0) {
 		$("#first-time-welcome").delay(1000).show("slide", {direction: "up"}, 800);
-			$("#close-button-first-time").click(function(){
+			$("#first-time-close").click(function(){
 			$("#first-time-welcome").hide("slide", {direction: "up"}, 800);
 			$firsttime = 1;
 			$("#mainpage").fadeIn(1000);
