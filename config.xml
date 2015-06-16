@@ -9,6 +9,10 @@
     <activity  />
 </gap:config-file>
 <gap:plugin name="de.appplant.cordova.plugin.email-composer" version="0.8.2" />
+<gap:plugin name="com.telerik.sendgrid" version="1.0.4">
+    <param name="API_USER" value="..." />
+    <param name="API_KEY" value="..." />
+</gap:plugin>
 <gap:splash src="images/splashscenelandhdpi.png" gap:platform="android" gap:density="land-hdpi" />
 <gap:splash src="images/splashscenelandldpi.png" gap:platform="android" gap:density="land-ldpi" />
 <gap:splash src="images/splashscenelandmdpi.png" gap:platform="android" gap:density="land-mdpi" />
