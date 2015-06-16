@@ -8,6 +8,7 @@
 	<application android:debuggable="false" android:hardwareAccelerated="true" />
     <activity  />
 </gap:config-file>
+<gap:plugin name="de.appplant.cordova.plugin.email-composer" version="0.8.2" />
 <gap:splash src="images/splashscenelandhdpi.png" gap:platform="android" gap:density="land-hdpi" />
 <gap:splash src="images/splashscenelandldpi.png" gap:platform="android" gap:density="land-ldpi" />
 <gap:splash src="images/splashscenelandmdpi.png" gap:platform="android" gap:density="land-mdpi" />
