@@ -16,6 +16,7 @@ $(document).ready(function(){
 		$("#mainpage").fadeIn(2000);
 	};
 	$("#main-settings-cog").click(function(){
+			$("#mainpage").toggle("fade");
 			$("#settings-page").toggle("slide", {direction: "up"}, 800);
 			$onsettings = 1;
 	});
