@@ -1,6 +1,6 @@
 //Variables (Need to be kept in data)
-$firsttime = 0;
-
+$firsttime = 1;
+$onsettings = 0;
 //Start code here
 $(document).ready(function(){
 	$("#header").fadeIn(2000);
@@ -14,5 +14,9 @@ $(document).ready(function(){
 	} else {
 		$firsttime = 1;
 		$("#mainpage").fadeIn(2000);
-	}
+	};
+	$("#main-settings-cog").click(function(){
+			$("#settings-page").toggle("slide", {direction: "up"}, 800);
+			$onsettings = 1;
+	});
 });
