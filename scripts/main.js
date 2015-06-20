@@ -14,16 +14,13 @@ $(document).ready(function(){
 		$firsttime = 1;
 		$("#mainpage").fadeIn(2000);
 	};
-	$("#main-settings-cog.inactive").click(function(){
-			$("#mainpage").fadeIn(400);
-			$("#settings-page").show("slide", {direction: "up"}, 800);
-			$("#main-settings-cog").removeClass("inactive");
-			$("#main-settings-cog").addClass("active");
-		$("#main-settings-cog.active").click(function(){
-			$("#mainpage").fadeIn(400);
-			$("#settings-page").hide("slide", {direction: "up"}, 800);
-			$("#main-settings-cog").removeClass("active");
-			$("#main-settings-cog").addClass("inactive");
-		});
+	$("#main-settings-cog").click(function() {
+	if ( $("#settings-page").is(":hidden") ){
+		$("#settings-page").show("slide", {direction: "up"}, 800);
+	}
+	else
+	{
+		$("#settings-page").hide("slide", {direction: "up"}, 800);
+	}
 	});
 });

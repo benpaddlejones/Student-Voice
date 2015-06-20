@@ -1,3 +1,10 @@
+*.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
 body {
 	font-family: Roboto-Black;
 	left: 0px;
@@ -9,7 +16,6 @@ body {
 	height: auto;
 	background-color: #FAFAFA;
 }
-
 #header {
 	width: 100%;
 	background-color: #007fcc;
@@ -40,8 +46,6 @@ body {
 	position: relative;
 	z-index: 10;
 }
-
-
 #header #header-settings-cog {
 	height: 8%;
 	float: right;
@@ -100,7 +104,7 @@ body {
 }
 #settings-page {
 	width: 100%;
-	height: auto;
+	height: 100%;
 	display: none;
 	position: absolute;
 	z-index: 9;
@@ -108,7 +112,7 @@ body {
 }
 #settings-page p {
 	font-family: Roboto-Bold;
-	margin-top: 3em;
+	margin-top: 1em;
 	padding: 2em;
 	text-align: center;
 }
