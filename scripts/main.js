@@ -1,6 +1,5 @@
 //Variables (Need to be kept in data)
-$firsttime = 1;
-$onsettings = 0;
+$firsttime = 0;
 //Start code here
 $(document).ready(function(){
 	$("#header").fadeIn(2000);
@@ -15,9 +14,16 @@ $(document).ready(function(){
 		$firsttime = 1;
 		$("#mainpage").fadeIn(2000);
 	};
-	$("#main-settings-cog").click(function(){
-			$("#mainpage").toggle("fade");
-			$("#settings-page").toggle("slide", {direction: "up"}, 800);
-			$onsettings = 1;
+	$("#main-settings-cog.inactive").click(function(){
+			$("#mainpage").fadeIn(400);
+			$("#settings-page").show("slide", {direction: "up"}, 800);
+			$("#main-settings-cog").removeClass("inactive");
+			$("#main-settings-cog").addClass("active");
+		$("#main-settings-cog.active").click(function(){
+			$("#mainpage").fadeIn(400);
+			$("#settings-page").hide("slide", {direction: "up"}, 800);
+			$("#main-settings-cog").removeClass("active");
+			$("#main-settings-cog").addClass("inactive");
+		});
 	});
 });
