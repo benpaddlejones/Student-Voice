@@ -16,11 +16,11 @@ $(document).ready(function(){
 	};
 	$("#main-settings-cog").click(function() {
 	if ( $("#settings-page").is(":hidden") ){
-		$("#settings-page").show("slide", {direction: "up"}, 800);
+		$("#settings-page").show("slide", {direction: "right"}, 800);
 	}
 	else
 	{
-		$("#settings-page").hide("slide", {direction: "up"}, 800);
+		$("#settings-page").hide("slide", {direction: "right"}, 800);
 	}
 	});
 });
