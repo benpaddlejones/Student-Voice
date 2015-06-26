@@ -6,6 +6,8 @@
         version     = "0.0.9" >
 <gap:config-file platform="android" parent="/manifest/application" >
 	<application android:debuggable="false" android:hardwareAccelerated="true" />
+	<activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+	
     <activity  />
 </gap:config-file>
 <!-- <gap:plugin name="de.appplant.cordova.plugin.email-composer" version="0.8.2" /> -->
@@ -25,6 +27,7 @@
 <preference name="android-minSdkVersion" value="13" />
 <preference name="android-targetSdkVersion" value="22" />
 <preference name="permissions" value="none"/>
+<preference name="Fullscreen" value="true" />
 <name>Student Voice </name>
 <description>Blah Blah Blah... </description>
 <author href="https://github.com/ajahiri/Student-Voice/wiki" email="benpaddlejones@outlook.com">Ben Jones  </author>
