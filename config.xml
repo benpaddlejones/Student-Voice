@@ -14,14 +14,18 @@
 <!--     <param name="API_USER" value="..." /> -->
 <!--     <param name="API_KEY" value="..." /> -->
 <!-- </gap:plugin> -->
-<gap:splash src="images/splashscenelandhdpi.png" gap:platform="android" gap:density="land-hdpi" />
-<gap:splash src="images/splashscenelandldpi.png" gap:platform="android" gap:density="land-ldpi" />
-<gap:splash src="images/splashscenelandmdpi.png" gap:platform="android" gap:density="land-mdpi" />
-<gap:splash src="images/splashscenelandxhdpi.png" gap:platform="android" gap:density="land-xhdpi" />
-<gap:splash src="images/splashsceneporthdpi.png" gap:platform="android" gap:density="port-hdpi" />
-<gap:splash src="images/splashsceneportldpi.png" gap:platform="android" gap:density="port-ldpi" />
-<gap:splash src="images/splashsceneportmdpi.png" gap:platform="android" gap:density="port-mdpi" />
-<gap:splash src="images/splashsceneportxhdpi.png" gap:platform="android" gap:density="port-xhdpi" />
+<gap:splash src="images/splashscenelandhdpi.png" gap:platform="android" gap:density="hdpi" />
+<gap:splash src="images/splashscenelandldpi.png" gap:platform="android" gap:density="ldpi" />
+<gap:splash src="images/splashscenelandmdpi.png" gap:platform="android" gap:density="mdpi" />
+<gap:splash src="images/splashscenelandxhdpi.png" gap:platform="android" gap:density="xhdpi" />
+<!-- <gap:splash src="images/splashscenelandhdpi.png" gap:platform="android" gap:density="land-hdpi" />  -->
+<!-- <gap:splash src="images/splashscenelandldpi.png" gap:platform="android" gap:density="land-ldpi" />  -->
+<!-- <gap:splash src="images/splashscenelandmdpi.png" gap:platform="android" gap:density="land-mdpi" />  -->
+<!-- <gap:splash src="images/splashscenelandxhdpi.png" gap:platform="android" gap:density="land-xhdpi" />  -->
+<!-- <gap:splash src="images/splashsceneporthdpi.png" gap:platform="android" gap:density="port-hdpi" />  -->
+<!-- <gap:splash src="images/splashsceneportldpi.png" gap:platform="android" gap:density="port-ldpi" />  -->
+<!-- <gap:splash src="images/splashsceneportmdpi.png" gap:platform="android" gap:density="port-mdpi" />  -->
+<!-- <gap:splash src="images/splashsceneportxhdpi.png" gap:platform="android" gap:density="port-xhdpi" />  -->
 <icon src="images/icon.png" />
 <preference name="android-minSdkVersion" value="13" />
 <preference name="android-targetSdkVersion" value="22" />
@@ -29,5 +33,5 @@
 <preference name="Fullscreen" value="true" />
 <name>Student Voice </name>
 <description>Blah Blah Blah... </description>
-<author href="https://github.com/ajahiri/Student-Voice/wiki" email="benpaddlejones@outlook.com">Ben Jones  </author>
+<author href="https://github.com/ajahiri/Student-Voice/wiki" email="onestudentvoice@gmail.com"> Ali Hamieh, Arian Jahiri, Vincent Bergonia </author>
 </widget>
