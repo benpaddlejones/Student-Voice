@@ -1,9 +1,11 @@
-*.unselectable {
+* {
    -moz-user-select: -moz-none;
    -khtml-user-select: none;
    -webkit-user-select: none;
    -ms-user-select: none;
    user-select: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
 }
 body {
 	font-family: Roboto-Black;
@@ -15,6 +17,8 @@ body {
 	padding: 0;
 	height: auto;
 	background-color: #FAFAFA;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
 }
 #header {
 	width: 100%;
@@ -49,17 +53,12 @@ body {
 #header #header-settings-cog {
 	height: 8%;
 	float: right;
-	position: relative;
 	z-index: 11;
-	margin-top: auto;
-	margin-bottom:  auto;
+	vertical-align:central;
 	margin-right: 1%;
-	cursor: pointer;
-	active: none;
-	hover: none;	
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
 }
-
-
 
 #first-time-welcome {
 	height: 100%;
