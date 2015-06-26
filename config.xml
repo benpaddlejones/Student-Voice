@@ -6,9 +6,8 @@
         version     = "0.0.9" >
 <gap:config-file platform="android" parent="/manifest/application" >
 	<application android:debuggable="false" android:hardwareAccelerated="true" />
-	<activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
-	
-    <activity  />
+	<activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+
 </gap:config-file>
 <!-- <gap:plugin name="de.appplant.cordova.plugin.email-composer" version="0.8.2" /> -->
 <!-- <gap:plugin name="com.telerik.sendgrid" version="1.0.4"> -->
