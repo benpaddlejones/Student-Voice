@@ -15,12 +15,10 @@
 <!--     <param name="API_KEY" value="..." /> -->
 <!-- </gap:plugin> -->
 
-
 <!-- <gap:splash src="images/splashscenehdpi.png" gap:platform="android" gap:density="hdpi" />  -->
 <!-- <gap:splash src="images/splashsceneldpi.png" gap:platform="android" gap:density="ldpi" />  -->
 <!-- <gap:splash src="images/splashscenemdpi.png" gap:platform="android" gap:density="mdpi" />  -->
 <!-- <gap:splash src="images/splashscenexhdpi.png" gap:platform="android" gap:density="xhdpi" />  -->
-
 
 <!-- <gap:splash src="images/splashscenelandhdpi.png" gap:platform="android" gap:density="land-hdpi" />  -->
 <!-- <gap:splash src="images/splashscenelandldpi.png" gap:platform="android" gap:density="land-ldpi" />  -->
