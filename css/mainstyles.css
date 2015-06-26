@@ -56,15 +56,10 @@ body {
 	margin-right: 1%;
 	cursor: pointer;
 	active: none;
-	hover: none;	
-	 -moz-user-select: -moz-none;
-   -khtml-user-select: none;
-   -webkit-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
+	hover: none;
+	-webkit-tap-highlight-color: transparent;	
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-
-
 
 #first-time-welcome {
 	height: 100%;
