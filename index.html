@@ -4,86 +4,77 @@
 <meta charset="utf-8">
 <title>StudentVoice</title>
 <script src="phonegap.js"></script>
-<link href="css/fontstyles.css" rel="stylesheet" type="text/css">
-<link href="css/mainstyles.css" rel="stylesheet" type="text/css">
-<link href="css/formstyles.css" rel="stylesheet" type="text/css">
+<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+<!-- HEADER !-->
+<div class="navbar-fixed">
+<nav>
+  <div class="nav-wrapper #1e88e5 blue darken-1">
+    <a href="#!" class="brand-logo">StudentVoice</a>
+    <a href="#" data-activates="sidebar" class="button-collapse"><i class="material-icons">menu</i></a>
+	<ul class="side-nav" id="sidebar">
+        <li><a href="#" data-activates="sidebar">Sass</a></li>
+        <li><a href="#" data-activates="sidebar">Components</a></li>
+        <li><a href="#" data-activates="sidebar">Javascript</a></li>
+        <li><a href="#" data-activates="sidebar">Mobile</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+<!-- FORM -->
+<div class="row">	
+	<br />
+	<form class="col s12">
+	  <div class="input-field col s6">
+        <input id="input_text" type="text">
+        <label for="input_text">First Name</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="input_text" type="text">
+        <label for="input_text">Last Name</label>
+      </div>
+    <div class="input-field col s12">
+    	<input id="email" type="email" class="validate">
+    	<label for="email" data-error="wrong" data-success="right">Email</label>
+	</div>
+    <div class="row">
+      <div class="input-field col s12">
+        <textarea id="textarea1" class="materialize-textarea" length="500"></textarea>
+        <label for="textarea1">Message to Department</label>
+      </div>
+    </div>
+    <div class="file-field input-field col s12">
+   	  <div class="btn col s4">
+        <span>Image</span>
+        <input type="file" />
+      </div>
+      <input class="file-path validate col s7 right" type="text"/>
+    </div>
+    <p class="col s12">
+      <input type="checkbox" id="agreeterms" />
+      <label for="agreeterms">Do you agree to the Terms and Conditions?</label>
+    </p>
+    <p class="col s12">
+      <input type="checkbox" id="extra" />
+      <label for="extra">Another checkbox.</label>
+    </p>
+    <div class="center">
+    	<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    	</button>
+    </div>
+  </form>
+</div>
+
+
+
 
 <!-- Libs and Scripts !--> 
 <script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="lib/jquery-ui-1.11.4/jquery-ui.min.js"></script>
-<script type="text/javascript" src="lib/jqueryanimationfix.js"></script>
-<script type="text/javascript" src="lib/fastclick.js"></script> 
+<script type="text/javascript" src="js/materialize.min.js"></script>
 <script type="text/javascript" src="scripts/main.js"></script> 
-<script type="text/javascript" src="scripts/form.js"></script> 
-
-<!-- HEADER !-->
-<div id="header">
-  <p id="student">STUDENT<span id="voice">VOICE</span><span id="header-settings-cog"><img id="main-settings-cog" src="images/settingscog.png" width="32" height="32"></span></p>
-</div>
-
-<!-- Main Page !-->
-<div id="mainpage">
-<form id="mainform">
-  <div class="group">
-    <input type="text"><span class="highlight"></span><span class="bar"></span>
-    <label>Name</label>
-  </div>
-  <div class="group">
-    <input type="text"><span class="highlight"></span><span class="bar"></span>
-    <label>Last Name</label>
-  </div>
-  <div class="group">
-    <input type="text"><span class="highlight"></span><span class="bar"></span>
-    <label>Email Address</label>
-  </div>
-  <div class="group">
-    <input type="text"><span class="highlight"></span><span class="bar"></span>
-    <label>School</label>
-  </div>
-  <button type="button" class="button buttonBlue">Submit
-    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
-  </button>
-</form>
-</div>
-
-<!-- 1st Time Welcome !-->
-<div id="first-time-welcome"> &nbsp;
-  <p id="welcome-title">Welcome!</p>
-  <p id="welcome-page-content">Hey, looks like its the first time you have run this app or it has been the first time you have run this app since an update. This is just a friendly reminder that you must be aware of the policies we have in place. Blah, more random bullshit on this page. To close this reminder please tap on "Close".</p>
-  <button type="button" class="button buttonBlue" id="first-time-close">Close
-    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
-  </button>
-  <p>&nbsp;</p>
-</div>
-
-<!-- Settings Page !-->
-<div id="settings-page">
-	<p>Save these settings for regular use!</p>
-<form id="settings-form">
-  <div class="group">
-    <input type="text"><span class="highlight"></span><span class="bar"></span>
-    <label>Name</label>
-  </div>
-  <div class="group">
-    <input type="text"><span class="highlight"></span><span class="bar"></span>
-    <label>Last Name</label>
-  </div>
-  <div class="group">
-    <input type="text"><span class="highlight"></span><span class="bar"></span>
-    <label>Email Address</label>
-  </div>
-  <div class="group">
-    <input type="text"><span class="highlight"></span><span class="bar"></span>
-    <label>School</label>
-  </div>
-  <button type="button" class="button buttonBlue">Save
-    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
-  </button>
-</form>
-</div>
 </body>
 </html>
