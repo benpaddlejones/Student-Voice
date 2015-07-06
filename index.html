@@ -4,13 +4,18 @@
 <meta charset="utf-8">
 <title>StudentVoice</title>
 <script src="phonegap.js"></script>
+<!-- Libs and Scripts !--> 
+<script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script> 
 <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/mainstyles.css"  media="screen,projection"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 <!-- HEADER !-->
+<header>
 <div class="navbar-fixed">
 <nav>
   <div class="nav-wrapper #1e88e5 blue darken-1">
@@ -25,7 +30,10 @@
   </div>
 </nav>
 </div>
-<!-- FORM -->
+</header>
+
+<!-- Main content -->
+<main>
 <div class="row">	
 	<br />
 	<form class="col s12">
@@ -48,33 +56,29 @@
       </div>
     </div>
     <div class="file-field input-field col s12">
-   	  <div class="btn col s4">
+   	  <div class="btn col s4 #1e88e5 blue darken-1">
         <span>Image</span>
-        <input type="file" />
+        <input type="file" accept="image/x-png, image/gif, image/jpeg, image/jpg" />
       </div>
       <input class="file-path validate col s7 right" type="text"/>
     </div>
     <p class="col s12">
       <input type="checkbox" id="agreeterms" />
-      <label for="agreeterms">Do you agree to the Terms and Conditions?</label>
-    </p>
-    <p class="col s12">
-      <input type="checkbox" id="extra" />
-      <label for="extra">Another checkbox.</label>
+      <label for="agreeterms">Do you agree to the <a>Terms and Conditions</a>?</label>
     </p>
     <div class="center">
-    	<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    	<button class="btn waves-effect waves-light #1e88e5 blue darken-1" type="submit" name="action">Submit
     	</button>
     </div>
   </form>
 </div>
+</main>
+
+<!-- Footer -->
+<footer>
+	
+</footer>
 
 
-
-
-<!-- Libs and Scripts !--> 
-<script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
-<script type="text/javascript" src="scripts/main.js"></script> 
 </body>
 </html>
