@@ -35,7 +35,7 @@
 <preference name="android-targetSdkVersion" value="22" />
 <preference name="permissions" value="none"/>
 <preference name="Fullscreen" value="true" />
-<name>Student Voice </name>
-<description>Blah Blah Blah... </description>
+<name>Student Voice -NEWUIBRANCH</name>
+<description>Student-Voice application build from ARIAN.</description>
 <author href="https://github.com/ajahiri/Student-Voice/wiki" email="halfbeardstudios@gmail.com"> Ali Hamieh, Arian Jahiri, Vincent Bergonia </author>
 </widget>
