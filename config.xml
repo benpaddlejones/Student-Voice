@@ -3,7 +3,7 @@
         xmlns:android   = "http://schemas.android.com/apk/res/android"
 		xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.studentvoice.app"
-        version     = "0.0.9" >
+        version     = "0.1.1" >
 <gap:config-file platform="android" parent="/manifest/application" >
 	<application android:debuggable="false" android:hardwareAccelerated="true" />
 	<activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
@@ -29,11 +29,12 @@
 <!-- <gap:splash src="images/splashsceneportmdpi.png" gap:platform="android" gap:density="port-mdpi" />  -->
 <!-- <gap:splash src="images/splashsceneportxhdpi.png" gap:platform="android" gap:density="port-xhdpi" />  -->
 <icon src="images/icon.png" />
+<preference name='phonegap-version' value='cli-5.1.1' />
 <preference name="android-minSdkVersion" value="13" />
 <preference name="android-targetSdkVersion" value="22" />
 <preference name="permissions" value="none"/>
 <preference name="Fullscreen" value="true" />
-<name>Student Voice </name>
-<description>Blah Blah Blah... </description>
+<name>Student Voice -NEWUIBRANCH</name>
+<description>Student-Voice application build from ARIAN.</description>
 <author href="https://github.com/ajahiri/Student-Voice/wiki" email="halfbeardstudios@gmail.com"> Ali Hamieh, Arian Jahiri, Vincent Bergonia </author>
 </widget>

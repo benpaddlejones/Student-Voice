@@ -1,121 +1,26 @@
-* {
-   -moz-user-select: -moz-none;
-   -khtml-user-select: none;
-   -webkit-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-tap-highlight-color: transparent; /* For some Androids */
-}
-body {
-	font-family: Roboto-Black;
-	left: 0px;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	margin: 0;
-	padding: 0;
-	height: auto;
-	background-color: #FAFAFA;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-tap-highlight-color: transparent; /* For some Androids */
-}
-#header {
-	width: 100%;
-	background-color: #007fcc;
-	text-align: center;
-	color: #FFF;
-	margin: 0;
-	paddin: 0;
-	z-index: 10;
-	display: none;
-	border: none;
-	position: fixed;
-	height: auto;
-	
-}
-#header #student {
-	font-family: Roboto-BoldCondensedItalic;
-	font-size: 180%;
-	padding: 0;
-	margin: 0;
-	position: relative;
-	z-index: 10;
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), 
+  url(GC.woff2) format('woff2'),
+  url(IE.woff) format('woff');
 }
 
-#header #student #voice {
-	font-family: Roboto-Thin;
-	padding: 0;
-	margin: 0;
-	position: relative;
-	z-index: 10;
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  word-wrap: normal;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
 }
-#header #header-settings-cog {
-	height: 8%;
-	float: right;
-	z-index: 11;
-	vertical-align:central;
-	margin-right: 1%;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-tap-highlight-color: transparent; /* For some Androids */
-}
-
-#first-time-welcome {
-	height: 100%;
-	width: 100%;
-	background-color: #FFF;
-	font-family: Roboto-Regular;
-	font-size: 100%;
-	color: #000;
-	z-index: 9;
-	display: none;
-	position: absolute;
-}
-
-#first-time-welcome #welcome-title {
-	font-family: Roboto-Black;
-	color: #000;
-	text-align: left;
-	padding-left: 2em;
-	margin-top: 10%;
-}
-
-#first-time-welcome #welcome-page-content {
-	padding-left: 2em;
-	padding-right: 2em;
-	padding-bottom: 2em;
-	font-family: Roboto-Regular;
-
-}
-#mainpage {
-	padding: 0px;
-	height: auto;
-	width: 100%;
-	display: none;
-	position: absolute;
-	z-index: 8;
-}
-#mainpage #main-form form {
-	text-align: left;
-	margin-top: 5%;
-}
-#first-time-close {
-	width: auto;
-	margin-left: 2em;
-	font-size: 100%;
-	position: absolute;
-}
-#settings-page {
-	width: 100%;
-	height: 100%;
-	display: none;
-	position: absolute;
-	z-index: 9;
-	background-color: #FAFAFA;
-}
-#settings-page p {
-	font-family: Roboto-Bold;
-	margin-top: 1em;
-	padding: 2em;
-	text-align: center;
+#header-logo{
+	max-width: 100%;
+	max-height: 100%;
 }
