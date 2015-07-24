@@ -3,7 +3,7 @@
         xmlns:android   = "http://schemas.android.com/apk/res/android"
 		xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.studentvoice.app"
-        version     = "0.1.1" >
+        version     = "0.1.2" >
 <gap:config-file platform="android" parent="/manifest/application" >
 	<application android:debuggable="false" android:hardwareAccelerated="true" />
 	<activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
@@ -34,7 +34,7 @@
 <preference name="android-targetSdkVersion" value="22" />
 <preference name="permissions" value="none"/>
 <preference name="Fullscreen" value="true" />
-<name>Student Voice -NEWUIBRANCH</name>
-<description>Student-Voice application build from ARIAN.</description>
+<name>Student Voice</name>
+<description>Student-Voice application build.</description>
 <author href="https://github.com/ajahiri/Student-Voice/wiki" email="halfbeardstudios@gmail.com"> Ali Hamieh, Arian Jahiri, Vincent Bergonia </author>
 </widget>
