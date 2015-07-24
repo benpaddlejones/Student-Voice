@@ -62,22 +62,25 @@
       </div>
       <input class="file-path validate col s7 right" type="text"/>
     </div>
+    <br>
     <!--THE DROPDOWN WITH SCHOOL NAMES-->
-<form>
-  <p>
-    <input type="text" id="nrwr" size="12" data-emoji_font="true" style="font-family: Arial, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;, Symbola, EmojiSymbols !important;">
-  </p>
-  <p> <span id="matches">1000 matches</span><br>
-    <select id="names" multiple="" size="15">
-      <option>Merrylands High School</option>
-      <option>Parramatta High School</option>
-      <option>Granville South High School</option>
-      <option>Cerdon College</option>
-      <option>Sefton High School</option>
-      <option>Auburn High School</option>
-    </select>
-  </p>
-</form>
+  	<div class="row">
+  			<div class="input-field col s12">
+  			<input type="text" id="nrwr">
+  			<label for="nrwr">Search for School</label>
+  			</div>
+  			<div class="col s12">
+  			<span id="matches">1000 matches</span><br>
+    		<select id="names" multiple="" size="15" style="display: block; height: 5em;">
+				<option>Merrylands High School</option>
+				<option>Parramatta High School</option>
+				<option>Granville South High School</option>
+				<option>Cerdon College</option>
+				<option>Sefton High School</option>
+				<option>Auburn High School</option>
+  	  		</select>
+  		</div>
+  	</div>
     <p class="col s12">
       <input type="checkbox" id="agreeterms" />
       <label for="agreeterms">Do you agree to the <a>Terms and Conditions</a>?</label>
