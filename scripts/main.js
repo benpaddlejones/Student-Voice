@@ -78,7 +78,12 @@ $(document).ready(function(){
   var inp  = document.querySelector('#nrwr');
   var sel  = document.querySelector('#names');
   var disp = document.querySelector('#matches');
-
+  var mytextbox = document.getElementById('nrwr');
+  var mydropdown = document.getElementById('names');
+  
+  mydropdown.onchange = function(){
+     mytextbox.value = this.value;
+	}
   var list = (function () {
     var firsts = [
 'Abbotsford Public School',
