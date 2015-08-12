@@ -8,7 +8,6 @@
     <!-- Libs and Scripts !-->
     <script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="lib/materialize.min.js"></script>
-    <script type="text/javascript" src="lib/jqueryanimationfix.js"></script>
     <script type="text/javascript" src="lib/fastclick.js"></script>
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="css/mainstyles.css" media="screen,projection" />
@@ -35,6 +34,9 @@
 
     <!-- Main content -->
     <main>
+        <div class="row">
+            <br />
+        </div>
         <form class="col s12">
             <div class="row">
                 <div class="input-field col s12">
@@ -2313,19 +2315,20 @@
                 </p>
             </div>
 
-            <div class="row">
-                <div class="center">
-                    <button class="btn waves-effect waves-light #1e88e5 blue darken-1" type="submit" name="action" id="submitButton">Submit </button>
-                </div>
-            </div>
+            
         </form>
+        <div class="row">
+            <div class="center">
+                <button class="btn waves-effect waves-light #1e88e5 blue darken-1" name="action" onclick="Materialize.toast('Message Sent!', 3000)" id="submitButton">Submit </button>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
     <footer> </footer>
 
     <!--Script-->
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
     <!-- End of file -->
 </body>

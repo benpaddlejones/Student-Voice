@@ -24,7 +24,6 @@ $(document).ready(function(){
     //Check if the user wants to save data, if so, save it when submitting the form.
 	$('#submitButton').click(function () {
 	    if (saveisChecked == 1) {
-	        alert("Submitting.");
 	        window.localStorage.setItem("isthereData", 1);
 
 	        //Get value data from Inputs
