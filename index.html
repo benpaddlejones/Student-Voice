@@ -37,19 +37,19 @@
         <form class="col s12">
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="input_text" type="text">
+                    <input id="input_text" type="text" name="firstNameInput">
                     <label for="input_text">First Name</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="input_text" type="text">
+                    <input id="input_text" type="text" name="lastNameInput">
                     <label for="input_text">Last Name</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="email" type="email" class="validate">
+                    <input id="email" type="email" class="validate" name="emailInput">
                     <label for="email" data-error="Wrong" data-success="Right">Email</label>
                 </div>
             </div>
@@ -73,7 +73,7 @@
             <!--THE DROPDOWN WITH SCHOOL NAMES-->
             <div class="row">
                 <div class="col s12">
-                    <input type="text" id="nrwr">
+                    <input type="text" id="nrwr" name="schoolInput">
                     <label class="active" for="nrwr">School Search</label>
                 </div>
                 <div class="col s12">
@@ -2302,6 +2302,13 @@
                 <p class="col s12">
                     <input type="checkbox" id="agreeterms" />
                     <label for="agreeterms">Do you agree to the <a>Terms and Conditions</a>?</label>
+                </p>
+            </div>
+
+            <div class="row">
+                <p class="col s12">
+                    <input type="checkbox" id="saveinfo" />
+                    <label for="saveinfo">Do you want to save this information for later use?</label>
                 </p>
             </div>
 

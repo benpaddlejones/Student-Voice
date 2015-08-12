@@ -6,6 +6,58 @@ $(document).ready(function(){
       closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
     }
   	);
+
+    //Form Storage. Information being stored: [fName, lName, email, School]
+
+    //Global variables
+	var saveisChecked = 0;
+	var fNameStorage = 0;
+	var lNameStorage = 0;
+	var emailStorage = 0;
+	var schoolStorage = 0;
+
+    //Trigger change of variable if saveinfo is checked
+	$('#saveinfo').change(function () {
+	    saveisChecked = 1;
+	});
+
+    //Check if the user wants to save data, if so, save it when submitting the form.
+	if (saveisChecked == 1) {
+	    $('#submitButton').click(function () {
+	        window.localStorage.setItem("isthereData", 1);
+
+            //Get value data from Inputs
+	        fNameStorage = $('input[name="firstNameInput"]').val();
+	        lNameStorage = $('input[name="lastNameInput"]').val();
+	        emailStorage = $('input[name="emailInput"]').val();
+	        schoolStorage = $('input[name="schoolInput"]').val();
+
+            //Save Value data into Storage
+	        window.localStorage.setItem("fName", fNameStorage);
+	        window.localStorage.setItem("lName", lNameStorage);
+	        window.localStorage.setItem("email", emailStorage);
+	        window.localStorage.setItem("school", schoolStorage);
+	    });
+	};
+
+    //Check if there is data, if not the command will end.
+	var isthereData = window.localStorage.getItem("isthereData");
+	if (isthereData == 1) {
+
+	    //Get Data from Storage
+	    var firstNamefromStorage = window.localStorage.getItem("fName");
+	    var lastNamefromStorage = window.localStorage.getItem("lName");
+	    var emailfromStorage = window.localStorage.getItem("email");
+	    var schoolfromStorage = window.localStorage.getItem("school");
+
+	    //Input Data into Value of Input
+	    $('input[name="firstNameInput"]').val(firstNamefromStorage);
+	    $('input[name="lastNameInput"]').val(lastNamefromStorage);
+	    $('input[name="emailInput"]').val(emailfromStorage);
+	    $('input[name="schoolInput"]').val(schoolfromStorage);
+	};
+
+    //End Code for Form Storage
 });
 
 (function (window, document, undefined) {
