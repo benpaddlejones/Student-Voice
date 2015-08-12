@@ -22,23 +22,24 @@ $(document).ready(function(){
 	});
 
     //Check if the user wants to save data, if so, save it when submitting the form.
-	if (saveisChecked == 1) {
-	    $('#submitButton').click(function () {
+	$('#submitButton').click(function () {
+	    if (saveisChecked == 1) {
+	        alert("Submitting.");
 	        window.localStorage.setItem("isthereData", 1);
 
-            //Get value data from Inputs
+	        //Get value data from Inputs
 	        fNameStorage = $('input[name="firstNameInput"]').val();
 	        lNameStorage = $('input[name="lastNameInput"]').val();
 	        emailStorage = $('input[name="emailInput"]').val();
 	        schoolStorage = $('input[name="schoolInput"]').val();
 
-            //Save Value data into Storage
+	        //Save Value data into Storage
 	        window.localStorage.setItem("fName", fNameStorage);
 	        window.localStorage.setItem("lName", lNameStorage);
 	        window.localStorage.setItem("email", emailStorage);
 	        window.localStorage.setItem("school", schoolStorage);
-	    });
-	};
+	    };
+	});
 
     //Check if there is data, if not the command will end.
 	var isthereData = window.localStorage.getItem("isthereData");
