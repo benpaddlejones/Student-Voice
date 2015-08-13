@@ -7,15 +7,78 @@ $(document).ready(function(){
     }
   	);
 
-    //Form Storage. Information being stored: [fName, lName, email, School]
-
     //Global variables
 	var saveisChecked = 0;
 	var fNameStorage = 0;
 	var lNameStorage = 0;
 	var emailStorage = 0;
 	var schoolStorage = 0;
+	var isthereData = 0;
 
+    //Get and Write Storage Data
+	getDataWriteData();
+
+
+    //Reset form after Submit
+	function partialReset() {
+	    isthereData = window.localStorage.getItem("isthereData");
+	    $('textarea').val('');
+	    $('input').val('');
+	    $('input:checkbox').removeAttr('checked');
+	    $("input").blur();
+	    $("textarea").blur();
+        getDataWriteData();
+
+	};
+
+    //Clear Storage Function
+	function deleteinformation() {
+	    isthereData = window.localStorage.getItem("isthereData");
+	    if (isthereData == 1) {
+	        //Remove all Items from Storage
+	        window.localStorage.removeItem("isthereData");
+	        window.localStorage.removeItem("fName");
+	        window.localStorage.removeItem("lName");
+	        window.localStorage.removeItem("email");
+	        window.localStorage.removeItem("school");
+
+	        //Remove Text Value from Input Boxes
+	        $('input[name="firstNameInput"]').val("");
+	        $('input[name="lastNameInput"]').val("");
+	        $('input[name="emailInput"]').val("");
+	        $('input[name="schoolInput"]').val("");
+	        //Remove Focus so Inputs are Back to Normal
+	        $("input").blur();
+	        $("textarea").blur();
+	    };
+	};
+
+    //Check if there is data, if not the command will end.
+	function getDataWriteData() {
+	    isthereData = window.localStorage.getItem("isthereData");
+	    if (isthereData == 1) {
+
+	        //Get Data from Storage
+	        var firstNamefromStorage = window.localStorage.getItem("fName");
+	        var lastNamefromStorage = window.localStorage.getItem("lName");
+	        var emailfromStorage = window.localStorage.getItem("email");
+	        var schoolfromStorage = window.localStorage.getItem("school");
+
+	        //Input Data into Value of Input
+	        $('input[name="firstNameInput"]').val(firstNamefromStorage);
+	        $('input[name="lastNameInput"]').val(lastNamefromStorage);
+	        $('input[name="emailInput"]').val(emailfromStorage);
+	        $('input[name="schoolInput"]').val(schoolfromStorage);
+
+            //Add Focus so Text Doesn't Overlap
+	        $('input[name="firstNameInput"]').focus();
+	        $('input[name="lastNameInput"]').focus();
+	        $('input[name="emailInput"]').focus();
+	        $('input[name="schoolInput"]').focus();
+	    };
+	};
+
+    //EVENT LISTENERS
     //Trigger change of variable if saveinfo is checked
 	$('#saveinfo').change(function () {
 	    saveisChecked = 1;
@@ -38,27 +101,19 @@ $(document).ready(function(){
 	        window.localStorage.setItem("email", emailStorage);
 	        window.localStorage.setItem("school", schoolStorage);
 	    };
+	    partialReset();
 	});
 
-    //Check if there is data, if not the command will end.
-	var isthereData = window.localStorage.getItem("isthereData");
-	if (isthereData == 1) {
-
-	    //Get Data from Storage
-	    var firstNamefromStorage = window.localStorage.getItem("fName");
-	    var lastNamefromStorage = window.localStorage.getItem("lName");
-	    var emailfromStorage = window.localStorage.getItem("email");
-	    var schoolfromStorage = window.localStorage.getItem("school");
-
-	    //Input Data into Value of Input
-	    $('input[name="firstNameInput"]').val(firstNamefromStorage);
-	    $('input[name="lastNameInput"]').val(lastNamefromStorage);
-	    $('input[name="emailInput"]').val(emailfromStorage);
-	    $('input[name="schoolInput"]').val(schoolfromStorage);
-	};
+    //Run Clear Storage Function on click of button
+	$('#clearinfo').click(function () {
+	    deleteinformation();
+	});
 
     //End Code for Form Storage
 });
+
+
+// Search Function Code
 
 (function (window, document, undefined) {
   function Narrower(inp, sel, disp, list) {

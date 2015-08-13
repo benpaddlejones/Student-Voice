@@ -5,12 +5,14 @@
     <meta charset="utf-8">
     <title>STUDENTVOICE</title>
     <script src="phonegap.js"></script>
-    <!-- Libs and Scripts !-->
+    <!-- Library -->
     <script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="lib/materialize.min.js"></script>
     <script type="text/javascript" src="lib/fastclick.js"></script>
+    <!--CSS-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="css/mainstyles.css" media="screen,projection" />
+    <!--Mobile Fix-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -22,7 +24,7 @@
                 <div class="nav-wrapper #1e88e5 blue darken-1">
                     <img src="images/brand-logo.png" class="brand-logo" id="header-logo" /> <a href="#" data-activates="sidebar" class="button-collapse"><i class="material-icons">menu</i></a>
                     <ul class="side-nav" id="sidebar">
-                        <li><a href="#">Preset Info</a></li>
+                        <li><a id="clearinfo">Clear Saved Information</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Terms and Conditions</a></li>
@@ -34,9 +36,7 @@
 
     <!-- Main content -->
     <main>
-        <div class="row">
-            <br />
-        </div>
+        <br />
         <form class="col s12">
             <div class="row">
                 <div class="input-field col s12">
@@ -58,8 +58,8 @@
             </div>
 
             <div class="row">
-                <div class="input-field col s12">
-                    <textarea id="textarea1" class="materialize-textarea" length="500"></textarea>
+                <div class="input-field col s12" id="messageDiv">
+                    <textarea id="textarea1 messagetoDepartment" class="materialize-textarea" length="500" name="messagetoDepartment"></textarea>
                     <label for="textarea1">Message to Department</label>
                 </div>
             </div>
@@ -68,7 +68,7 @@
                 <div class="file-field input-field col s12">
                     <div class="btn col s4 #1e88e5 blue darken-1">
                         <span>Image</span>
-                        <input type="file" accept="image/x-png, image/gif, image/jpeg, image/jpg" />
+                        <input id="fileUpload" name="fileUpload" type="file" accept="image/x-png, image/gif, image/jpeg, image/jpg" />
                     </div>
                     <input class="file-path validate col s7 right" type="text" />
                 </div>
