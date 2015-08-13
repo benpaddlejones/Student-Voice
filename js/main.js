@@ -140,6 +140,7 @@ function sendEmail() {
     message = $('input[name="messagetoDepartment"]').val();
 
     //Send Email
+    alert('Are you sure you want to send this email?');
     cordova.plugins.email.open({
         to: toSchool,
         cc: email,
