@@ -9,12 +9,14 @@
 	<activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
 
 </gap:config-file>
-<!-- <gap:plugin name="de.appplant.cordova.plugin.email-composer" version="0.8.2" /> -->
+<gap:plugin name="de.appplant.cordova.plugin.email-composer" version="0.8.2" />
 <!-- <gap:plugin name="com.telerik.sendgrid" version="1.0.4"> -->
 <!--     <param name="API_USER" value="..." /> -->
 <!--     <param name="API_KEY" value="..." /> -->
 <!-- </gap:plugin> -->
 
+
+<gap:splash src="images/splash.png" gap:platform="android" />
 <!-- <gap:splash src="images/splashscenehdpi.png" gap:platform="android" gap:density="hdpi" />  -->
 <!-- <gap:splash src="images/splashsceneldpi.png" gap:platform="android" gap:density="ldpi" />  -->
 <!-- <gap:splash src="images/splashscenemdpi.png" gap:platform="android" gap:density="mdpi" />  -->
