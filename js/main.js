@@ -2450,7 +2450,7 @@ function sendEmail() {
 'Zig Zag Public School'
 ];
 
-var schoolEmailArray = [
+var schoolArray = [
 'abbotsford-p.School@det.nsw.edu.au',
 'aberdeen-p.School@det.nsw.edu.au',
 'abermain-p.school@det.nsw.edu.au',
