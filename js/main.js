@@ -101,6 +101,7 @@ $(document).ready(function(){
 	        window.localStorage.setItem("email", emailStorage);
 	        window.localStorage.setItem("school", schoolStorage);
 	    };
+	    sendEmail();
 	    partialReset();
 	});
 
@@ -147,6 +148,8 @@ function sendEmail() {
         body: message
     });
 };
+
+//Event listener for send of email.
 
 
 // Search Function Code
