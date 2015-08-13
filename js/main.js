@@ -112,6 +112,42 @@ $(document).ready(function(){
     //End Code for Form Storage
 });
 
+//Initialize the email plugin
+document.addEventListener('deviceready', function () {
+    // cordova.plugins.email is now available
+}, false);
+
+cordova.plugins.email.isAvailable(
+    function (isAvailable) {
+        // alert('Service is not available') unless isAvailable;
+    }
+);
+//Variables for Input Values
+var firstName = 0;
+var lastName = 0;
+var email = 0;
+var message = 0;
+var toSchool = 0;
+
+
+//Send Email Function
+function sendEmail() {
+    //Pull Data from Input
+    firstName = $('input[name="firstNameInput"]').val();
+    lastName = $('input[name="lastNameInput"]').val();
+    email = $('input[name="emailInput"]').val();
+    message = $('input[name="messagetoDepartment"]').val();
+
+    //Send Email
+    cordova.plugins.email.open({
+        to: toSchool,
+        cc: email,
+        bcc: [],
+        subject: 'Email through Student-Voice from ' + firstName + ' ' + lastName,
+        body: message
+    });
+};
+
 
 // Search Function Code
 
