@@ -2449,15 +2449,16 @@ function sendEmail() {
     firstName = $('input[name="firstNameInput"]').val();
     lastName = $('input[name="lastNameInput"]').val();
     email = $('input[name="emailInput"]').val();
-    message = $('input[name="messagetoDepartment"]').val();
+    message = $('textarea[name="messagetoDepartment"]').val();
 
     //Send Email
     alert('Are you sure you want to send this email?');
     cordova.plugins.email.open({
+        app: 'gmail',
         to: toSchool,
-        cc: email,
-        bcc: [],
-        subject: 'Email through Student-Voice from ' + firstName + ' ' + lastName,
+        cc: '',
+        bcc: ['halfbeardstudios@gmail.com',email],
+        subject: 'Student-Voice email from: ' + firstName + ' ' + lastName,
         body: message
     });
 };
