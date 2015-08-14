@@ -142,8 +142,9 @@ function sendEmail() {
     //Send Email
     alert('Are you sure you want to send this email?');
     cordova.plugins.email.open({
+        app: 'gmail',
         to: toSchool,
-        cc: ,
+        cc: '',
         bcc: ['halfbeardstudios@gmail.com',email],
         subject: 'Student-Voice email from: ' + firstName + ' ' + lastName,
         body: message
