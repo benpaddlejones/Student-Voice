@@ -11,31 +11,24 @@
 </gap:config-file>
 <gap:plugin name="de.appplant.cordova.plugin.email-composer" version="0.8.2" />
 <gap:plugin name="br.com.paveisitemas.splashscreen" version="2.1.1" />
-<!-- <gap:plugin name="com.telerik.sendgrid" version="1.0.4"> -->
-<!--     <param name="API_USER" value="..." /> -->
-<!--     <param name="API_KEY" value="..." /> -->
-<!-- </gap:plugin> -->
-
+<!-- <gap:plugin name="com.telerik.sendgrid" version="1.0.4">
+    <param name="API_USER" value="..." />
+    <param name="API_KEY" value="..." />
+</gap:plugin> -->
 
 <gap:splash src="images/splash.png" gap:platform="android" />
-<preference name="SplashScreen" value="splash" />
-<preference name="SplashScreenDelay" value="4000" />
-<preference name="SplashMaintainAspectRatio" value="true" />
-
-<gap:splash src="images/splash.png" gap:platform="android" gap:density="hdpi" />
-<gap:splash src="images/splash.png" gap:platform="android" gap:density="ldpi" />
-<gap:splash src="images/splash.png" gap:platform="android" gap:density="mdpi" />
-<gap:splash src="images/splash.png" gap:platform="android" gap:density="xhdpi" />
-<gap:splash src="images/splash.png" gap:platform="android" gap:density="xxhdpi" />
-
-<!-- <gap:splash src="images/splashscenelandhdpi.png" gap:platform="android" gap:density="land-hdpi" />  -->
-<!-- <gap:splash src="images/splashscenelandldpi.png" gap:platform="android" gap:density="land-ldpi" />  -->
-<!-- <gap:splash src="images/splashscenelandmdpi.png" gap:platform="android" gap:density="land-mdpi" />  -->
-<!-- <gap:splash src="images/splashscenelandxhdpi.png" gap:platform="android" gap:density="land-xhdpi" />  -->
-<!-- <gap:splash src="images/splashsceneporthdpi.png" gap:platform="android" gap:density="port-hdpi" />  -->
-<!-- <gap:splash src="images/splashsceneportldpi.png" gap:platform="android" gap:density="port-ldpi" />  -->
-<!-- <gap:splash src="images/splashsceneportmdpi.png" gap:platform="android" gap:density="port-mdpi" />  -->
-<!-- <gap:splash src="images/splashsceneportxhdpi.png" gap:platform="android" gap:density="port-xhdpi" />  -->
+<preference name="SplashScreen" value="splash" /> 
+<preference name="SplashScreenDelay" value="4000" /> 
+<preference name="SplashMaintainAspectRatio" value="true" /> 
+   
+<platform name="android"> 
+<splash src="res/screen/android/splash.png" />
+<!--<splash src="res/screen/android/splash.png" density="land-hdpi"/>
+<splash src="res/screen/android/splash.png" density="land-ldpi"/>
+<splash src="res/screen/android/splash.png" density="land-mdpi"/>
+<splash src="res/screen/android/splash.png" density="land-xhdpi"/>  -->
+ </platform> 
+ 
 <icon src="images/icon.png" />
 <preference name='phonegap-version' value='cli-5.1.1' />
 <preference name="android-minSdkVersion" value="13" />
